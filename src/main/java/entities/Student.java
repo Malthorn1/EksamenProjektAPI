@@ -5,11 +5,13 @@
  */
 package entities;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -26,5 +28,8 @@ public class Student {
     private String name;
     private String phone;
     private String email;
+    
+    @OneToMany(cascade = {CascadeType.ALL})
+    private SignedUp SignedUp; 
 
 }

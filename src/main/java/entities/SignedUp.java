@@ -30,5 +30,7 @@ public class SignedUp {
     
     @ManyToOne(cascade = {CascadeType.ALL})
     private Student Student; 
+    
+    
 
 }
