@@ -1,0 +1,93 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package entities;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
+
+/**
+ *
+ * @author mikke
+ */
+@Entity
+@NamedQuery(name = "SignedUp.deleteAllRows", query = "DELETE from SignedUp")
+public class SignedUp {
+
+    private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private boolean payed;
+    private String datePayed;
+
+    @ManyToOne(cascade = {CascadeType.ALL})
+    private Student Student;
+    
+    
+     @ManyToOne (cascade = {CascadeType.ALL})
+     private YogaClass yogaClass; 
+
+    public SignedUp() {
+    }
+     
+     
+     
+     
+     
+     
+     
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public boolean isPayed() {
+        return payed;
+    }
+
+    public void setPayed(boolean payed) {
+        this.payed = payed;
+    }
+
+    public String getDatePayed() {
+        return datePayed;
+    }
+
+    public void setDatePayed(String datePayed) {
+        this.datePayed = datePayed;
+    }
+
+    public Student getStudent() {
+        return Student;
+    }
+
+    public void setStudent(Student Student) {
+        this.Student = Student;
+    }
+
+    public YogaClass getYogaClass() {
+        return yogaClass;
+    }
+
+    public void setYogaClass(YogaClass yogaClass) {
+        this.yogaClass = yogaClass;
+    }
+
+     
+     
+     
+     
+     
+}
