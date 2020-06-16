@@ -28,10 +28,8 @@ public class ApplicationConfig extends Application {
         resources.add(rest.CourseResource.class);
         resources.add(rest.DemoResource.class);
         resources.add(rest.InstructorResource.class);
-        resources.add(rest.PokeResource.class);
         resources.add(rest.RenameMeResource.class);
         resources.add(rest.YogaClassResource.class);
-        resources.add(rest.asyncdemo.class);
         resources.add(rest.populateDBResource.class);
         resources.add(security.JWTAuthenticationFilter.class);
         resources.add(security.LoginEndpoint.class);

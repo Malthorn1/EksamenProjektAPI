@@ -9,7 +9,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dtos.CourseDTO;
 import dtos.CoursesDTO;
-import facades.PokemonFacade;
 import facades.courseFacade;
 import java.util.List;
 import javax.persistence.EntityManagerFactory;
