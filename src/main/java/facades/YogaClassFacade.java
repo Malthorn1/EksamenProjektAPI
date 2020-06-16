@@ -93,14 +93,14 @@ public class YogaClassFacade {
             em.close();
         }
     }
-
-    public YogaClassDTO deleteYogaClass(YogaClassDTO YOGADTO) {
-            EntityManager em = getEntityManager();
-            
-            try {
-                em.getTransaction().begin();
-            }
-    }
+//
+//    public YogaClassDTO deleteYogaClass(YogaClassDTO YOGADTO) {
+//            EntityManager em = getEntityManager();
+//            
+//            try {
+//                em.getTransaction().begin();
+//            }
+//    }
         
     }
     

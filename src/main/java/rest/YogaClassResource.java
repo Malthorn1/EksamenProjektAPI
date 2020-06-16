@@ -74,18 +74,18 @@ public class YogaClassResource {
         return GSON.toJson(responseDTO.getId()+" Has been Updated");
     }
     
-    @POST
-    @Path("delete")
-    @Produces({MediaType.APPLICATION_JSON})
-    @Consumes({MediaType.APPLICATION_JSON})
-    public String deleteYogaClass(String YogaClass) throws NotFoundException{
-        System.out.println(YogaClass);
-        YogaClassDTO YOGADTO = GSON.fromJson(YogaClass, YogaClassDTO.class);
-       
-        
-        YogaClassDTO responseDTO = FACADE.deleteYogaClass(YOGADTO);
-        return GSON.toJson(responseDTO.getId()+" Has been Updated");
-    }
-    
+//    @POST
+//    @Path("delete")
+//    @Produces({MediaType.APPLICATION_JSON})
+//    @Consumes({MediaType.APPLICATION_JSON})
+//    public String deleteYogaClass(String YogaClass) throws NotFoundException{
+//        System.out.println(YogaClass);
+//        YogaClassDTO YOGADTO = GSON.fromJson(YogaClass, YogaClassDTO.class);
+//       
+//        
+//        YogaClassDTO responseDTO = FACADE.deleteYogaClass(YOGADTO);
+//        return GSON.toJson(responseDTO.getId()+" Has been Updated");
+//    }
+//    
     
 }
