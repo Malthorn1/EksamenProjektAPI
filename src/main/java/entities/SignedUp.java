@@ -5,6 +5,8 @@
  */
 package entities;
 
+import java.time.LocalDate;
+import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,9 +29,11 @@ public class SignedUp {
     private Long id;
     private boolean payed;
     private String datePayed;
+    
+   
 
     @ManyToOne(cascade = {CascadeType.ALL})
-    private Student Student;
+    private Student student;
     
     
      @ManyToOne (cascade = {CascadeType.ALL})
@@ -37,9 +41,42 @@ public class SignedUp {
 
     public SignedUp() {
     }
+
+    public SignedUp(Long id, boolean payed, String datePayed, Student student, YogaClass yogaClass) {
+        this.id = id;
+        this.payed = payed;
+        this.datePayed = datePayed;
+        this.student = student;
+        this.yogaClass = yogaClass;
+    }
+
+    public SignedUp(boolean payed, String datePayed, Student student, YogaClass yogaClass) {
+        this.payed = payed;
+        this.datePayed = datePayed;
+        this.student = student;
+        this.yogaClass = yogaClass;
+    }
+
+    public SignedUp(boolean payed, String datePayed) {
+        this.payed = payed;
+        this.datePayed = datePayed;
+    }
      
      
      
+    public void addYogaClassToSignup (YogaClass yogaClass) {
+        this.yogaClass = yogaClass; 
+        if(!this.yogaClass.getSignUps().contains(this)) {
+            yogaClass.getSignUps().add(this); 
+        }
+    }
+    
+      public void addStudentToSignup (Student student) {
+        this.student = student; 
+        if(!this.student.getSignUps().contains(this)) {
+            student.getSignUps().add(this); 
+        }
+    }
      
      
      
@@ -69,13 +106,19 @@ public class SignedUp {
         this.datePayed = datePayed;
     }
 
+   
+
     public Student getStudent() {
-        return Student;
+        return student;
     }
 
-    public void setStudent(Student Student) {
-        this.Student = Student;
+    public void setStudent(Student student) {
+        this.student = student;
     }
+
+ 
+   
+
 
     public YogaClass getYogaClass() {
         return yogaClass;

@@ -5,6 +5,8 @@
  */
 package entities;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,10 +31,44 @@ public class Student {
     private String phone;
     private String email;
 
+    @OneToMany (mappedBy ="student", cascade = CascadeType.ALL)
+    private List<SignedUp> signUps = new ArrayList<>(); 
+    
+    
+    
     public Student() {
     }
 
+    public Student(Long id, String name, String phone, String email) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+    }
+
+    public Student(String name, String phone, String email) {
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+    }
+
     
+   public void addSignUpToStudent (SignedUp signUps) {
+        if(!this.signUps.contains(this)) {
+            
+        }
+        if(!signUps.getStudent().equals(this)){
+            signUps.setStudent(this);
+        }
+    }
+
+    public List<SignedUp> getSignUps() {
+        return signUps;
+    }
+
+    public void setSignUps(List<SignedUp> signUps) {
+        this.signUps = signUps;
+    }
     
     
     

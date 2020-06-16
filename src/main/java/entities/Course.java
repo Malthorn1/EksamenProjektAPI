@@ -5,11 +5,17 @@
  */
 package entities;
 
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -26,17 +32,29 @@ public class Course {
     private String courseName; 
     private String description; 
 
+    
+    @OneToMany (mappedBy ="course", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<YogaClass> yogaClasses = new ArrayList<>(); 
+    
     public Course() {
+    }
+
+    public Course(Long id, String courseName, String description) {
+        this.id = id;
+        this.courseName = courseName;
+        this.description = description;
+    }
+
+    public Course(String courseName, String description) {
+        this.courseName = courseName;
+        this.description = description;
     }
 
     
     
     
     
-    
-    
-    
-    
+
     public Long getId() {
         return id;
     }
@@ -60,6 +78,16 @@ public class Course {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public List<YogaClass> getYogaClasses() {
+        return yogaClasses;
+    }
+
+    public void setYogaClasses(List<YogaClass> yogaClasses) {
+        this.yogaClasses = yogaClasses;
+    }
+    
+    
     
     
 

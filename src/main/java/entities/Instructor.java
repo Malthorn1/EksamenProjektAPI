@@ -34,8 +34,24 @@ public class Instructor {
     public Instructor() {
     }
 
+    public Instructor(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Instructor(String name) {
+        this.name = name;
+    }
+
     
-    
+    public void addYogaClasssToInstructor (YogaClass yogaClasses) {
+        if(!this.yogaClasses.contains(yogaClasses)) {
+            this.yogaClasses.add(yogaClasses); 
+        }
+        if(!yogaClasses.getInstructors().contains(this)){
+            yogaClasses.addInstructorToYogaClass(this);
+        }
+    }
     
     
     
