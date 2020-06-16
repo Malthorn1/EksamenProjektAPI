@@ -58,7 +58,7 @@ public class InstructorResource {
 
     }
     @PUT 
-    @RolesAllowed({("admin"),("admin1") })
+     @RolesAllowed({"admin1"})
     @Path("edit/{value}")
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
@@ -72,7 +72,7 @@ public class InstructorResource {
     }
     
     @Path("delete")
-    @RolesAllowed({("admin"),("admin1") })
+    @RolesAllowed({"admin1"})
     @POST
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.APPLICATION_JSON})
