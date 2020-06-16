@@ -48,7 +48,7 @@ public class YogaClassResource {
     }
 
     @POST
-    @RolesAllowed({("admin")})
+    @RolesAllowed({("admin"),("admin1") })
     @Path("add")
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
@@ -61,7 +61,7 @@ public class YogaClassResource {
     
     
     @PUT
-    @RolesAllowed({("admin")})
+    @RolesAllowed({("admin"),("admin1") })
     @Path("edit/{value}")
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
