@@ -9,10 +9,7 @@ import entities.Instructor;
 import entities.YogaClass;
 import java.util.List;
 
-/**
- *
- * @author mikke
- */
+
 public class InstructorDTO {
 
     private Long id;

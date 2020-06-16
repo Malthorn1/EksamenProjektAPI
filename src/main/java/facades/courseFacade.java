@@ -16,10 +16,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.TypedQuery;
 
-/**
- *
- * @author mikke
- */
+
 public class courseFacade {
 
     private static EntityManagerFactory emf;

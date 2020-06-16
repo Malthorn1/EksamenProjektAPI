@@ -5,10 +5,7 @@
  */
 package dtos;
 
-/**
- *
- * @author casper
- */
+
 public class CombinedDTO {
     
     private String catFact;

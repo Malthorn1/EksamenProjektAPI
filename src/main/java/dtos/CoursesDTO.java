@@ -9,10 +9,7 @@ import entities.YogaClass;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author mikke
- */
+
 public class CoursesDTO {
     private List<CourseDTO> courses; 
     private List<YogaClassDTO> yogaClasses; 

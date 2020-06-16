@@ -19,10 +19,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
-/**
- *
- * @author mikke
- */
 
 @Entity 
 @NamedQuery(name = "YogaClass.deleteAllRows", query = "DELETE from YogaClass")

@@ -15,10 +15,6 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
-/**
- *
- * @author mikke
- */
 @Entity
 @NamedQuery(name = "SignedUp.deleteAllRows", query = "DELETE from SignedUp")
 public class SignedUp {

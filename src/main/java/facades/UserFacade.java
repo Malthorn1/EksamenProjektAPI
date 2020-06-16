@@ -12,9 +12,7 @@ import javax.persistence.EntityManagerFactory;
 import errorhandling.AuthenticationException;
 import utils.EMF_Creator;
 
-/**
- * @author lam@cphbusiness.dk
- */
+
 public class UserFacade {
   
     private static EntityManagerFactory emf;

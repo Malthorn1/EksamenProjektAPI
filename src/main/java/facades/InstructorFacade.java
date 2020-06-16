@@ -11,10 +11,7 @@ import errorhandling.NotFoundException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
-/**
- *
- * @author mikke
- */
+
 public class InstructorFacade {
 
     private static EntityManagerFactory emf;

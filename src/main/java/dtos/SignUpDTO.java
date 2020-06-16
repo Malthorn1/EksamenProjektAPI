@@ -8,10 +8,7 @@ package dtos;
 import entities.Student;
 import entities.YogaClass;
 
-/**
- *
- * @author mikke
- */
+
 public class SignUpDTO {
     private boolean payed;
     private String datePayed;

@@ -11,10 +11,7 @@ import entities.SignedUp;
 import entities.YogaClass;
 import java.util.List;
 
-/**
- *
- * @author mikke
- */
+
 public class YogaClassDTO {
     private Long id;
     private int maxParticipants; 

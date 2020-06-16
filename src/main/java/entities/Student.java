@@ -15,10 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
-/**
- *
- * @author mikke
- */
+
 @Entity
 @NamedQuery(name = "Student.deleteAllRows", query = "DELETE from Student")
 public class Student {

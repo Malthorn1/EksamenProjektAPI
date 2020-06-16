@@ -25,10 +25,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import utils.EMF_Creator;
 
-/**
- *
- * @author mikke
- */
+
 @Path("instructor")
 public class InstructorResource {
 

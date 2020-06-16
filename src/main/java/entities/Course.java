@@ -17,10 +17,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
-/**
- *
- * @author mikke
- */
+
 @Entity
 @NamedQuery(name = "Course.deleteAllRows", query = "DELETE from Course")
 public class Course {

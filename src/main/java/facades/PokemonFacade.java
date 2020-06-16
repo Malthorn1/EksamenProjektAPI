@@ -17,10 +17,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import utils.HttpUtils;
 
-/**
- *
- * @author mikke
- */
+
 public class PokemonFacade {
 
     private String PokemonByURL = "https://pokeapi.co/api/v2/pokemon/";

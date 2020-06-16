@@ -33,11 +33,6 @@ import utils.EMF_Creator;
 import utils.EMF_Creator.DbSelector;
 import utils.EMF_Creator.Strategy;
 
-/**
- *
- * @author mikke
- */
-
 
 public class CourseRessourceTest {
 

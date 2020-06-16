@@ -23,10 +23,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import utils.EMF_Creator;
 
-/**
- *
- * @author mikke
- */
+
 public class YogaClassFacadeTest {
 
     private static EntityManagerFactory emf;

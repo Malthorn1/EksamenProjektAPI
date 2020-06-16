@@ -19,10 +19,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import utils.EMF_Creator;
 
-/**
- *
- * @author mikke
- */
+
 @Path("course")
 public class CourseResource {
     private static final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory(

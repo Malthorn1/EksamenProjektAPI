@@ -12,10 +12,7 @@ import errorhandling.NotFoundException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
-/**
- *
- * @author mikke
- */
+
 public class YogaClassFacade {
      private static EntityManagerFactory emf;
     private static YogaClassFacade instance;

@@ -5,10 +5,7 @@
  */
 package dtos;
 
-/**
- *
- * @author jenso
- */
+
 public class KanyeDTO {
     
     private String text;

@@ -5,10 +5,6 @@
  */
 package dtos;
 
-/**
- *
- * @author casper
- */
 public class CatFactDTO {
     
     private String text;

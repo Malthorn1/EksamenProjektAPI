@@ -5,10 +5,7 @@
  */
 package dtos;
 
-/**
- *
- * @author Aske
- */
+
 public class UselessFactDTO {
     
     String text;

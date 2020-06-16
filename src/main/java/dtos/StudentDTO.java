@@ -10,10 +10,7 @@ import entities.Student;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author mikke
- */
+
 public class StudentDTO {
     
     private String name;
