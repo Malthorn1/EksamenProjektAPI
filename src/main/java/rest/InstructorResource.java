@@ -58,7 +58,6 @@ public class InstructorResource {
 
     }
     @PUT 
-     @RolesAllowed({"admin1"})
     @Path("edit/{value}")
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
