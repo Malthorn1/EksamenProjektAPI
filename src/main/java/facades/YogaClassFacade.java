@@ -96,6 +96,10 @@ public class YogaClassFacade {
 
     public YogaClassDTO deleteYogaClass(YogaClassDTO YOGADTO) {
             EntityManager em = getEntityManager();
+            
+            try {
+                em.getTransaction().begin();
+            }
     }
         
     }

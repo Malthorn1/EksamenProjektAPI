@@ -150,7 +150,7 @@ public class YogaClassFacadeTest {
 //        Remove any data after each test was run
     }
 
-    @Test
+    //@Test
     public void EditYogaClassTest() throws NotFoundException {
         YogaClass expectedClass = new YogaClass();
         
